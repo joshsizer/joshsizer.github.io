@@ -1,14 +1,28 @@
-.navbar-fixed-top {
-    background-color:white;
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 .main-body {
-    background-color: #f7f7f7;
-    margin-top: 20px;
+    margin-top:20px;
 }
 
-.navbar-fixed-bottom {
+.navbar-bottom {
     margin-bottom:0px;
+    border: none;
+    border-radius: 0px;
+}
+
+/*
+
+.navbar-fixed-top {
+    background-color:white;
 }
 
 .navbar-inverse .navbar-toggle .icon-bar {
@@ -20,7 +34,7 @@
 .navbar-inverse .navbar-header > a:hover, 
 .navbar-inverse .navbar-header > a:focus {
     color:black;
-}
+} */
 
 .fa {
     margin: 10px;
@@ -48,4 +62,21 @@
 .fa-twitter {
     background: #55ACEE;
     color: white;
+}
+
+.profile-picture {
+    padding:10px;
+    background-color: black;
+    height: 45%;
+    width: 40%;
+    margin-right: 20px;
+}
+
+.main-page-profile {
+    padding-bottom: 35px;
+    margin-bottom: 70px;
+}
+
+.jumbotron {
+    background-color: 88cee8;
 }
