@@ -86,8 +86,11 @@ section#section-code {
 }
 
 section {
+    display: flex;
+    flex-direction: column;
     margin: 0px;
     padding: 40px 10px;
+    min-height: 350px;
     font-size: 1.2em;
 } 
 
@@ -95,7 +98,7 @@ section h2 {
     margin-top:10px;
 }
 
-section:nth-child(odd) {
+section:nth-child(even) {
     background-color: #e0e0e0;
 }
 
