@@ -1,0 +1,116 @@
+html {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;    
+}
+
+.container {
+    max-width: 700px;
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    color:white;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #f1f1f1;
+}
+
+.navbar-flex {
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-logo {
+    margin: 0px;
+    padding: 14x;
+}
+
+.navbar ul {
+    display: inline;
+    margin: 0px;
+    color: white;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin: 0px;
+}
+
+.navbar a {
+    color:white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+
+.header-big-picture {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9) ), url('../img/index-header.jpg');
+    background-position: center;
+    height: 100vh;
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:white;
+    -webkit-box-shadow: 10px 10px 35px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 35px -10px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 35px -10px rgba(0,0,0,0.75);
+}
+
+
+section#section-code {
+    margin-top: 0px;
+}
+
+section {
+    margin: 40px 0px;
+    padding: 10px;
+    font-size: 1.2em;
+} 
+
+.header-big-picture h1 {
+    font-size:4em;
+    margin: 0px;
+    margin-top: 40px;
+    padding: 0px;
+}
+
+.header-big-picture .button {
+    color: inherit;
+    display: block;  
+    margin: 150px;  
+}
+
+.button a {
+    text-decoration: none;
+    color:inherit;
+    display: block;
+}
+
+.button {
+    border: solid;
+    border-radius: 5px;
+    border-color: inherit;
+    border-width: 1px;
+    padding: 10px 15px;
+    display: inline-block;
+    width:auto;
+    margin:10px;
+    margin-left: 0px;
+}

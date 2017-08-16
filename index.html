@@ -1,78 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Joshua Sizer</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" type="text/css" href="style.css">
-
-        <!-- jQuery library -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-        <!-- Latest compiled JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        
-        <style>
-            
-        </style>
-    </head>
-    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Joshua Sizer</title>
+</head>
 <body>
-    <!-- The top, fixed navigation bar -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" >
-      <div class="container" >
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>                        
-          </button>
-          <a class="navbar-brand text-uppercase" href="index.html">Joshua Sizer</a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="active text-uppercase"><a href="index.html">home</a></li>
-            <li class="text-uppercase"><a href="about-me.html">about me</a></li>
-            <li class="text-uppercase"><a href="code.html">code</a></li>
-            <li class="text-uppercase"><a href="music.html">music</a></li>
-            <li class="text-uppercase"><a href="volunteer.html">volunteer</a></li>
-          </ul>
-        </div>
-      </div>
+    
+    <nav class="navbar">
+        <div class="navbar-flex">          
+            <div class="navbar-logo"><a href="#">Joshua Sizer</a></div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#section-code">Code</a></li>
+                <li><a href="#section-music">Music</a></li>
+                <li><a href="#section-robotics">Robotics</a></li>
+                <li><a href="#section-volunteer">Volunteer</a></li>
+            </ul>
+        </div>  
     </nav>
 
-    <div class="container-fluid page-header">
-        <div class="jumbotron text-center">
-            <h1>Hey, I'm Josh!</h1>
-            <p>Thanks for stopping by! You'll learn a little about me here.</p>
-        </div>
-    </div>
-    <div class="container main-page-profile">
-        <div class="row">
-          <div class="span4">
-            <img style="float:left" class="img-circle profile-picture" src="images/profile.jpg"/>
-            <div class="content-heading"><h1>Profile</h1>  </div>
-            <p style="padding-top:100px">These are some words about me. They are filler just for now. I will add substance to them later. Right now, I am trying to get this picture of me to fit in with the rest of my website, but I'm not have a lot of luck. We'll see if I can make it work.</p>
-          
-          </div>
-        <div style="clear:both"></div>
-    </div>
-    </div>
+    <header class="header-big-picture">
+        <h1>Hi, I'm an aspiring developer.</h1>
+        <p>You'll learn a little bit about me here.</p>
+        <p class="button"><a id="button-scroll" href="#section-code">Read on</a></p>
+    </header>
 
-    
-    <!-- The bottom, fixed information bar -->
-    <footer class="navbar navbar-inverse navbar-bottom footer">
-        <div class="container"> 
-          <p class="navbar-text pull-left">© 2017 - Joshua Sizer</p>    
-          <a href="#" class="fa fa-twitter pull-right"></a>        
-          <a href="#" class="fa fa-facebook pull-right"></a>
-        </div>
-         <!-- Add font awesome icons -->
-        <span>
-            
-        </span>
-    </footer>
+    <div class="container">
+        <section id="section-code">
+            <h2>Code</h2>
+            <p> First and foremost, I am an aspiring developer. 
+                I have a passion to create functional, elegant 
+                code that does more than just work. Through higher
+                eduction, I hope to learn best practices and guiding
+                principals, as well as build a strong foundation
+                for self learning. With exciting new technologies emerging 
+                each and everyday - tools, frameworks, and even 
+                programming languages - staying on top is 
+                necessary to remain relevant. These new technologies
+                excite me, and I hope to gain the skill set required
+                for embracing them.
+            </p>
+            <p class="button"><a href="#">My Code</a></p>
+        </section>
+
+        <section id="section-music">
+            <h2>Music</h2>
+            <p> When I'm not developing code, you'll be sure to find
+                me sporadically playing notes on my guitar until I 
+                find a melody or chord that excites me... then I'll 
+                record it, program drums, mix, and master to taste.
+                Music production and code are alike - and both fuel
+                my desire to create.
+            </p>
+            <p class="button"><a href="#">My Music</a></p>
+        </section>
+
+        <section id="section-robotics">
+            <h2>Robotics</h2>
+            <p> Since the moment I could sign up for the school's 
+                robotics team as a freshman, I have been heavily 
+                involved in FRC Robotics Team 341, Miss Daisy.
+            </p>
+            <p class="button"><a href="#">Learn More</a></p>
+        </section>
+
+        <section id="section-volunteer">
+            <h2>Volunteer Service</h2>
+            <p> My time on Miss Daisy involved numerous 
+                demonstrations and outreach events with 
+                the goal of inspiring the youth and exposing
+                them to STEM. In a similar fashion, I helped
+                mentor FIRST Global team Honduras in the first 
+                ever "Robot Olympics". I also participate in
+                local Meals on Wheels as a way for community
+                involvment.
+            </p>
+            <p class="button"><a href="#">Learn More</a></p>
+        </section>
+    </div>
 </body>
 </html>
