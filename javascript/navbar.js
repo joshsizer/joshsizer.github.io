@@ -1,5 +1,6 @@
 var navbar_div_id = "nav"
 var active_link_class = "active"
+var domain_name = window.location.hostname
 
 // slits path name by "/", gets the first element, removes the .html
 var active_link = window.location.pathname.split("/").pop().replace(".html", "");
@@ -12,7 +13,7 @@ var active_link = window.location.pathname.split("/").pop().replace(".html", "")
 var navbar_info = {
     "logo-text":"Joshua Sizer",
     "logo-image-url":"img/",
-    "links": ["home","about","code","music","volunteer"]
+    "links": ["home", "about","code","music","volunteer"]
 };
 
 // inserts the navbar html into the div with the id of nav
@@ -23,30 +24,57 @@ $('#' + navbar_div_id).html(createNavbarString())
  * links based on the navbar_info JSON Object
  */
 function createNavbarString() {
-    var navbar_link_list = ""
+    var navbar_link_list = [navbar_info.links.length]
 
-    console.log(window.location.hostname)
-
-    for (cur_link_index in navbar_info.links) {
-        var cur_link = navbar_info.links[cur_link_index];
-        navbar_link_list += "<li><a ";
-        if (cur_link === active_link) {
-            navbar_link_list 
+    for (var i = 0; i < navbar_info.links.length; i++) {
+        var str = ""
+        var cur_link = navbar_info.links[i];
+        // this is where we would do any modifcations, like capitalize or uppercase the word
+        var cur_link_text = cur_link; 
+        if (cur_link === "home") {
+            cur_link = "index"
         }
+        str += "<li><a ";
+        if (cur_link === active_link) {
+            str += "class=\"" + active_link_class + "\" " 
+        }
+        str += "href=\"" + cur_link + ".html\""
+        
+        str += ">" + cur_link_text + "</a></li>";
+        navbar_link_list[i] = str;
     }
 
-    var list = "<li><a href=\"#\">Home</a></li>" +
-                "<li><a href=\"#section-code\">Code</a></li>" +
-                "<li><a href=\"#section-music\">Music</a></li>" +
-                "<li><a href=\"#section-robotics\">Robotics</a></li>" +
-                "<li><a href=\"#section-volunteer\">Volunteer</a></li>"
+    var list_text = ""
+    for (var i = 0; i < navbar_link_list.length; i++) {
+        list_text += navbar_link_list[i];
+        if (i === navbar_link_list.length - 1) {
+            break
+        }
+        list_text += "\n"
+    }
+
     var full = "<nav class=\"navbar\">" + 
                     "<div class=\"navbar-flex\">" +          
                         "<div class=\"navbar-logo\"><a href=\"#\">Joshua Sizer</a></div>" +
                         "<ul>" + 
-                            list + 
+                            list_text + 
                         "</ul>" + 
                         "</div>"  +
                     "</nav>" 
     return full                    
 }
+
+/*
+ *  <nav class="navbar">
+        <div class="navbar-flex">          
+            <div class="navbar-logo"><a href="#">Joshua Sizer</a></div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#section-code">Code</a></li>
+                <li><a href="#section-music">Music</a></li>
+                <li><a href="#section-robotics">Robotics</a></li>
+                <li><a href="#section-volunteer">Volunteer</a></li>
+            </ul>
+        </div>  
+    </nav>
+ */
