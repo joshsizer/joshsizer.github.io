@@ -19,6 +19,7 @@ body {
     border-bottom-style: solid;
     border-bottom-width: 1px;
     border-bottom-color: #f1f1f1;
+    text-transform: uppercase;
 }
 
 .navbar-flex {
@@ -50,9 +51,15 @@ body {
     padding: 10px;
 }
 
+.header-big-picture.index {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.65) ), url('../img/index-header.jpg');    
+}
 
+.header-big-picture.volunteer {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.65) ), url('../img/WHS-&-Honduras-in-DC_web.jpg');
+    
+}
 .header-big-picture {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9) ), url('../img/index-header.jpg');
     background-position: center;
     height: 100vh;
     background-size: cover;
@@ -121,9 +128,16 @@ section:nth-child(even) {
     border-radius: 5px;
     border-color: inherit;
     border-width: 1px;
-    padding: 10px 15px;
+    padding: 8px 13px;
     display: inline-block;
     width:auto;
     margin:10px;
     margin-left: 0px;
+    text-transform: uppercase;
+}
+
+.page-header {
+    margin-top:40px;
+    padding: 3px 0px;
+    background-color: #f1f1f1;
 }
