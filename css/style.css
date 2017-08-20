@@ -51,20 +51,30 @@ body {
     padding: 10px;
 }
 
-.header-big-picture.index {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.65) ), url('../img/index-header.jpg');    
+.header-picture.index {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9) ), url('../img/index-header.jpg');    
 }
 
-.header-big-picture.volunteer {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.65) ), url('../img/WHS-&-Honduras-in-DC_web.jpg');
-    
+.header-picture.code {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.73) ), url('../img/code-header.png');        
 }
-.header-big-picture {
-    background-position: center;
-    height: 100vh;
-    background-size: cover;
-    background-position:center;
-    background-repeat: no-repeat;
+
+.header-picture.music {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.73) ), url('../img/music-header-far-alt.jpg');
+    background-position: 50% 50%;    
+}
+
+.header-picture.volunteer {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5) ), url('../img/WHS-&-Honduras-in-DC_web.jpg');
+}
+
+.header-picture.robotics {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5) ), url('../img/josh-2017-robot.jpg');
+}
+
+.header-picture{
+    background-position: 50% 20%;
+    background-size: cover;    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -74,6 +84,16 @@ body {
     -webkit-box-shadow: 10px 10px 35px -10px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 35px -10px rgba(0,0,0,0.75);
     box-shadow: 10px 10px 35px -10px rgba(0,0,0,0.75);
+}
+
+.header-picture.big {
+    height: 100vh;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+
+.header-picture.small {
+    height: 450px;
 }
 
 .header-big-picture h1 {
