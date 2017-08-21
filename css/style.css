@@ -139,6 +139,7 @@ section {
     display: flex;
     flex-direction: column;
     text-align: left;
+    justify-content: center;
     margin: 0px;
     padding: 40px 24px;
     min-height: 300px;
@@ -158,8 +159,7 @@ section:nth-child(even) {
 
 .container {
     max-width: 1000px;
-    width: 100%;
-    margin: auto;
+    margin: 0 auto;
     padding: 0px 50px;
 }
 
@@ -222,14 +222,6 @@ img.circle {
     border-radius: 20%;
 }
 
-.about-body .container {
-    max-width: 1000px;
-}
-
-section#background {
-    padding-top:0px;
-}
-
 .picture-description {
     display: flex;
     flex-wrap: nowrap;
@@ -249,6 +241,27 @@ section#background {
     min-height: 200px;
     max-width: 400px;
     max-height: 400px;
+}
+
+.code-list, .music-list {
+    list-style: none;
+    margin: 0px 0px;
+    padding: 40px 0px;
+    overflow: hidden;
+    white-space: wrap;
+    
+}
+
+.code-list li, .music-list li{
+    border-style: solid solid none solid;
+    border-color: #d6d6d6;
+    border-width: 1px;
+    padding: 20px 40px;   
+    width: auto; 
+}
+
+.code-list li:last-child, .music-list li:last-child{
+    border-style:solid solid solid solid;
 }
 
 @media screen and (max-width: 768px) {
