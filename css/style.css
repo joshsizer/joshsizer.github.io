@@ -98,9 +98,9 @@ body {
     align-items: center;
     text-align: center;
     color:white;
-    -webkit-box-shadow: 10px 10px 35px -10px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 35px -10px rgba(0,0,0,0.75);
-    box-shadow: 10px 10px 35px -10px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 10px 35px -10px rgba(188,188,188,1);
+    -moz-box-shadow: 0px 10px 35px -10px rgba(188,188,188,1);
+    box-shadow: 0px 10px 35px -10px rgba(188,188,188,1);
 }
 
 .header-picture.big {
@@ -263,6 +263,12 @@ img.circle {
 .code-list li:last-child, .music-list li:last-child{
     border-style:solid solid solid solid;
 }
+
+.music-list a{
+    pointer-events: none;
+    color: inherit;
+}
+
 
 @media screen and (max-width: 768px) {
     .navbar ul{
