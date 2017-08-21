@@ -54,23 +54,21 @@ function createNavbarString() {
     }
 
     var full = "<nav class=\"navbar\">" + 
-                    "<div class=\"container\">" +
                     "<div class=\"navbar-flex desktop\">" +          
                         "<div class=\"navbar-logo\"><a href=\"index.html\">Joshua Sizer</a></div>" +
                         "<ul>" + 
                             list_text + 
                         "</ul>" + 
-                        "</div>"  +
+                    "</div>"  +
+                    "<div class=\"navbar-flex mobile\">" +
+                        "<div class=\"navbar-logo\"><a href=\"index.html\">Joshua Sizer</a></div>" +                        
+                        "<div class=\"menu-burger\" onclick=\"onMenuBurgerClick(this)\">" +
+                            "<span class=\"burger-bar bar1\"></span>" +
+                            "<span class=\"burger-bar bar2\"></span>" +
+                            "<span class=\"burger-bar bar3\"></span>" +                        
+                        "</div>" +
                     "</div>" + 
-                        "<div class=\"navbar-flex mobile\">" +
-                            "<div class=\"navbar-logo\"><a href=\"index.html\">Joshua Sizer</a></div>" +                        
-                            "<div class=\"menu-burger\" onclick=\"onMenuBurgerClick(this)\">" +
-                                "<span class=\"burger-bar bar1\"></span>" +
-                                "<span class=\"burger-bar bar2\"></span>" +
-                                "<span class=\"burger-bar bar3\"></span>" +                        
-                            "</div>" +
-                        "</div>" + 
-                    "</nav>" 
+                "</nav>" 
     return full                    
 }
 
