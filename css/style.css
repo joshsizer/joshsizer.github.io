@@ -1,6 +1,6 @@
 html {
     margin: 0px;
-    padding: 0px;
+    padding: 0px 0px;
 }
 
 body {
@@ -14,7 +14,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     color:white;
     border-bottom-style: solid;
     border-bottom-width: 1px;
@@ -26,6 +26,10 @@ body {
     width:100%;
     display: flex;
     justify-content: space-between;
+}
+
+.navbar-flex.mobile {
+    display: none;
 }
 
 .navbar-logo {
@@ -90,6 +94,7 @@ body {
 
 .header-picture.big {
     height: 100vh;
+    width:100vw;
     background-position:center;
     background-repeat: no-repeat;
 }
@@ -115,7 +120,6 @@ body {
     color: inherit;
 }
 
-
 section#section-code {
     margin-top: 0px;
 }
@@ -123,11 +127,13 @@ section#section-code {
 section {
     display: flex;
     flex-direction: column;
-    text-align: justify;
+    text-align: left;
     margin: 0px;
     padding: 40px 24px;
     min-height: 350px;
     font-size: 1.2em;
+    white-space: wrap;
+    overflow: hidden;
 } 
 
 section h2 {
@@ -142,7 +148,7 @@ section:nth-child(even) {
     max-width: 700px;
     width: 100%;
     margin: auto;
-    padding: 0px 20px;
+    padding: 0px 50spx;
 }
 
 .button a {
@@ -168,4 +174,54 @@ section:nth-child(even) {
     margin-top:40px;
     padding: 3px 0px;
     background-color: #f1f1f1;
+}
+
+.burger-bar {
+    height: 2px;
+    width: 30px;
+    background-color: white;
+    margin: 6px;
+    display: block;
+    transition: 0.4s;
+}
+
+.menu-burger {
+    padding: 6px 0px;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-8px, 7px) ;
+    transform: rotate(-45deg) translate(-7px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-4px, -4px) ;
+    transform: rotate(45deg) translate(-5px, -5px) ; 
+}
+
+@media screen and (max-width: 768px) {
+    .navbar ul{
+        display: none;
+    }
+
+    .navbar-flex.desktop {
+        display: none;
+    }
+
+    .navbar-flex.mobile {
+        display: flex;
+    }
+
+    .header-picture.small h1 {
+        font-size: 21vw
+    }
+   
+
 }

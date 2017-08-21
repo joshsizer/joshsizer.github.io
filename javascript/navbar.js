@@ -54,20 +54,32 @@ function createNavbarString() {
     }
 
     var full = "<nav class=\"navbar\">" + 
-                    "<div class=\"navbar-flex\">" +          
-                        "<div class=\"navbar-logo\"><a href=\"#\">Joshua Sizer</a></div>" +
+                    "<div class=\"navbar-flex desktop\">" +          
+                        "<div class=\"navbar-logo\"><a href=\"index.html\">Joshua Sizer</a></div>" +
                         "<ul>" + 
                             list_text + 
                         "</ul>" + 
                         "</div>"  +
+                        "<div class=\"navbar-flex mobile\">" +
+                            "<div class=\"navbar-logo\"><a href=\"#\">Joshua Sizer</a></div>" +                        
+                            "<div class=\"menu-burger\" onclick=\"onMenuBurgerClick(this)\">" +
+                                "<span class=\"burger-bar bar1\"></span>" +
+                                "<span class=\"burger-bar bar2\"></span>" +
+                                "<span class=\"burger-bar bar3\"></span>" +                        
+                            "</div>" +
+                        "</div>" + 
                     "</nav>" 
     return full                    
 }
 
+function onMenuBurgerClick(x) {
+    x.classList.toggle("change");    
+}
+
 /*
  *  <nav class="navbar">
-        <div class="navbar-flex">          
-            <div class="navbar-logo"><a href="#">Joshua Sizer</a></div>
+        <div class="navbar-flex desktop">          
+            <div class="navbar-logo"><a href="index.html">Joshua Sizer</a></div>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#section-code">Code</a></li>
@@ -76,5 +88,14 @@ function createNavbarString() {
                 <li><a href="#section-volunteer">Volunteer</a></li>
             </ul>
         </div>  
+
+        <div class="navbar-flex mobile">
+            <div class="navbar-logo"><a href="#">Joshua Sizer</a></div>                        
+            <div class="menu-burger" onclick="myFunction(this)">
+                <span class="burger-bar bar1"></span>
+                <span class="burger-bar bar2"></span>
+                <span class="burger-bar bar3"></span>                        
+            </div>
+        </div>
     </nav>
  */
