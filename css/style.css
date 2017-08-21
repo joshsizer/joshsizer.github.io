@@ -59,6 +59,10 @@ body {
     background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('../img/index-header.jpg');    
 }
 
+.header-picture.about {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url('../img/about-header.jpg');    
+}
+
 .header-picture.code {
     background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('../img/code-header.png');        
 }
@@ -145,7 +149,7 @@ section:nth-child(even) {
 }
 
 .container {
-    max-width: 700px;
+    max-width: 1000px;
     width: 100%;
     margin: auto;
     padding: 0px 50spx;
@@ -206,6 +210,39 @@ section:nth-child(even) {
     transform: rotate(45deg) translate(-5px, -5px) ; 
 }
 
+img.circle {
+    border-radius: 20%;
+}
+
+.about-body .container {
+    max-width: 1000px;
+}
+
+section#background {
+    padding-top:0px;
+}
+
+.picture-description {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    white-space: wrap;
+    justify-content: space-between;
+    width: auto;
+    align-items: center;
+}
+
+.picture-description img {
+    height: 50%;
+    width: 50%;
+    padding: 0px;
+    margin-right: 40px;
+    min-width: 200px;
+    min-height: 200px;
+    max-width: 400px;
+    max-height: 400px;
+}
+
 @media screen and (max-width: 768px) {
     .navbar ul{
         display: none;
@@ -223,5 +260,14 @@ section:nth-child(even) {
         font-size: 21vw
     }
    
+    .picture-description {
+        flex-wrap: wrap-reverse;
+    }
+
+    .picture-description img {
+        width: 95vw;
+        margin-right: 0px;
+        margin-top: 20px;
+    }
 
 }
