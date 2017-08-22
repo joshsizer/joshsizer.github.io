@@ -62,6 +62,12 @@ body {
     padding: 13px;
 }
 
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, .9);
+    color: black;
+    transition: 0.3s;
+}
+
 .header-picture.index {
     background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('../img/index-header.jpg');    
 }
@@ -274,7 +280,7 @@ img.circle {
     .container {
         padding: 0px;
     }
-    
+
     .navbar ul{
         display: none;
     }

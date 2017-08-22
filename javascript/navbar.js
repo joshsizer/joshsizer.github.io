@@ -13,7 +13,7 @@ var active_link = window.location.pathname.split("/").pop().replace(".html", "")
 var navbar_info = {
     "logo-text":"Joshua Sizer",
     "logo-image-url":"img/",
-    "links": ["home", "about","code","music","robotics","volunteer"]
+    "links": ["home", "about","code","music","robotics","volunteer","contact"]
 };
 
 // inserts the navbar html into the div with the id of nav
