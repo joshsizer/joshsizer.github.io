@@ -35,6 +35,7 @@ body {
 }
 
 .navbar {
+    z-index: 2;
     background-color: rgba(0, 0, 0, .9);
     position: fixed;
     top: 0;
@@ -88,13 +89,15 @@ body {
 }
 
 #dropdown-nav {
+    z-index: 1;
     width: 100vw;
     position: fixed;
-    top: 50px;
+    top: -50px;
     left: 0px;
     background-color: rgba(0, 0, 0, .9);
-    display: none;
-    transition: 1.0s;
+    visibility: hidden;
+    opacity: 0;
+    transition: .4s;
 }
 
 #dropdown-nav ul {

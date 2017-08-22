@@ -69,7 +69,7 @@ function createNavbarString() {
                         "</div>" +
                     "</div>" + 
                 "</nav>" + 
-                "<div id=\"dropdown-nav\" style=\"display:none\">" + 
+                "<div id=\"dropdown-nav\" style=\"visibility:hidden;\">" + 
                     "<ul>" + 
                         list_text +
                     "</ul>" +
@@ -80,12 +80,14 @@ function createNavbarString() {
 function onMenuBurgerClick(x) {
     x.classList.toggle("change");    
     var dropDownNav = document.getElementById('dropdown-nav')
-    if (dropDownNav.style.display === 'none') {
-        dropDownNav.style.display = 'block';
-        dropDownNav.style.opacity = "1.0"        
+    if (dropDownNav.style.visibility === 'hidden') {
+        dropDownNav.style.visibility = 'visible' 
+        dropDownNav.style.opacity = '1'      
+        dropDownNav.style.top = '50px' 
     } else {
-        dropDownNav.style.display = 'none';
-        dropDownNav.style.opacity = "0"                
+        dropDownNav.style.visibility = 'hidden'
+        dropDownNav.style.opacity = '0'    
+        dropDownNav.style.top = '-50px'           
     }
 }
 
