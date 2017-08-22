@@ -68,12 +68,25 @@ function createNavbarString() {
                             "<span class=\"burger-bar bar3\"></span>" +                        
                         "</div>" +
                     "</div>" + 
-                "</nav>" 
+                "</nav>" + 
+                "<div id=\"dropdown-nav\" style=\"display:none\">" + 
+                    "<ul>" + 
+                        list_text +
+                    "</ul>" +
+                "</div>"
     return full                    
 }
 
 function onMenuBurgerClick(x) {
     x.classList.toggle("change");    
+    var dropDownNav = document.getElementById('dropdown-nav')
+    if (dropDownNav.style.display === 'none') {
+        dropDownNav.style.display = 'block';
+        dropDownNav.style.opacity = "1.0"        
+    } else {
+        dropDownNav.style.display = 'none';
+        dropDownNav.style.opacity = "0"                
+    }
 }
 
 /*
@@ -81,21 +94,31 @@ function onMenuBurgerClick(x) {
         <div class="navbar-flex desktop">          
             <div class="navbar-logo"><a href="index.html">Joshua Sizer</a></div>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#section-code">Code</a></li>
-                <li><a href="#section-music">Music</a></li>
-                <li><a href="#section-robotics">Robotics</a></li>
-                <li><a href="#section-volunteer">Volunteer</a></li>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/code.html">Code</a></li>
+                <li><a href="/music.html">Music</a></li>
+                <li><a href="/robotics.html">Robotics</a></li>
+                <li><a href="/volunteer.html">Volunteer</a></li>
             </ul>
         </div>  
 
         <div class="navbar-flex mobile">
             <div class="navbar-logo"><a href="#">Joshua Sizer</a></div>                        
-            <div class="menu-burger" onclick="myFunction(this)">
+            <div class="menu-burger" onclick="onMenuBurgerClick(this)">
                 <span class="burger-bar bar1"></span>
                 <span class="burger-bar bar2"></span>
                 <span class="burger-bar bar3"></span>                        
             </div>
         </div>
     </nav>
+
+    <div id="dropdown-nav" style="display:none">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#section-code">Code</a></li>
+            <li><a href="#section-music">Music</a></li>
+            <li><a href="#section-robotics">Robotics</a></li>
+            <li><a href="#section-volunteer">Volunteer</a></li>
+        </ul>
+    </div>
  */
