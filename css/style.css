@@ -183,13 +183,6 @@ section:nth-child(even) {
     padding: 0px 50px;
 }
 
-.button a {
-    padding: 8px 13px;    
-    text-decoration: none;
-    color:inherit;
-    display: block;
-}
-
 .header-picture .button a:hover {
     background-color: white;
     color: black;
@@ -212,13 +205,26 @@ section:nth-child(even) {
     width:auto;
     margin:10px;
     margin-left: 0px;
-    border-radius: 2px;    
+    border-radius: 3px;    
     text-transform: uppercase;
     background-color: #0061ff;
     color: white;
     -webkit-box-shadow: 0px 3px 6px 0px rgba(135,135,135,1);
     -moz-box-shadow: 0px 3px 6px 0px rgba(135,135,135,1);
     box-shadow: 0px 3px 6px 0px rgba(135,135,135,1);
+}
+
+.button a {
+    padding: 8px 13px;    
+    text-decoration: none;
+    color:inherit;
+    display: block;
+    transition: .3s;
+}
+
+.button a:hover {
+    background-color: #0059ed;
+    border-radius: inherit;    
 }
 
 .page-header {
