@@ -89,8 +89,13 @@ function onMenuBurgerClick(x) {
         dropDownNav.style.opacity = '0'    
         dropDownNav.style.top = '-50px'           
     }
+    //var ypos = document.documentElement.clientWidth
+    //window.scrollTo(0,ypos)   
 }
 
+function readMoreOnClick() {
+    console.log('hello!')
+}
 /*
  *  <nav class="navbar">
         <div class="navbar-flex desktop">          
