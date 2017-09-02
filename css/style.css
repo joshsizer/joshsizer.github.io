@@ -22,16 +22,16 @@ body {
     left: 0;
     bottom: 0;
     height: 50px;
-    width: 100%;
+    width: 100vw;
     overflow:hidden;
     color:white;
+    padding: 0px 5px;
 }
 
 .footer-flex {
     display: flex;
     justify-content: space-between;
     line-height: 50px;
-    padding: Opx 20px;    
 }
 
 .navbar {
@@ -67,25 +67,39 @@ body {
 .navbar ul {
     display: inline;
     margin: 0px;
+    padding: 0px;
     color: white;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
 }
 
 .navbar ul li {
     display: inline-block;
-    margin: 0px;
+    margin-right:-4px;
 }
 
 .navbar a {
     color:white;
     text-decoration: none;
     display: block;
+    margin: 0px;
+    min-width: 50px;
     padding: 13px;
+    text-align: center;
 }
 
 .navbar a:hover {
     background-color: rgba(255, 255, 255, .9);
     color: black;
     transition: 0.3s;
+}
+
+.navbar a.active {
+    background-color: white;
+    color: black;
 }
 
 #dropdown-nav {
@@ -126,7 +140,8 @@ body {
 }
 
 .header-picture.about {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url('../img/about-header.jpg');    
+    background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url('../img/about-header.jpg');  
+    background-position: 40% 50%;        
 }
 
 .header-picture.code {
@@ -348,7 +363,7 @@ img.circle {
 
 @media screen and (max-width: 768px) {
     .container {
-        padding: 5px;
+        padding: 0px;
         font-size: .8em;
     }
 
@@ -382,6 +397,16 @@ img.circle {
 
     .code-list li iframe {
         width:100%;
+    }
+    
+    .footer-flex {
+        justify-content: space-around;
+    }
+
+    .header-picture.big h1 {
+        font-size:4em;
+        margin: 0px;
+        padding: 0px;
     }
 }
 
